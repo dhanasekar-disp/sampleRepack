@@ -1,20 +1,19 @@
 import React, {useEffect} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import CodeSplit from './CodeSplit';
 
 const Host = () => {
   useEffect(() => {
     getStorageValue();
   }, []);
 
-  const getStorageValue = async () => {
-    await AsyncStorage.setItem('TEST', 'VALUE');
-    console.log(await AsyncStorage.getItem('TEST'));
-  };
+  const getStorageValue = async () => {};
 
   return (
     <View>
       <Text>HOST</Text>
+      <CodeSplit />
     </View>
   );
 };

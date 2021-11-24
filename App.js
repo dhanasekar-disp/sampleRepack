@@ -25,7 +25,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import Host from './src/Host';
+import Host from './Host';
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
